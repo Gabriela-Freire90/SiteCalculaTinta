@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Calcula Quantidade Tinta</title>
+	<link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+	<header>
+
+		<nav>
+			<ul>
+				<li><a href="index.html">Home</a></li>
+				<li><a href="tipotintas.html">Tipos de Tintas</a></li>
+				<li><a href="#calculatinta">Calculadora de Tinta</a></li>
+				<li><a href="#contato">Contato</a></li>
+			</ul>
+		</nav>
+	</header>
+
+	<div class="textoesq">
+		<div>
+			<h1>Como escolher tinta de parede de forma correta?</h1>
+			<p>Se você está construindo ou reformando a sua casa, certamente pensa sobre como fazer com que
+				as paredes tenham mais vida, mais cor, e sejam mais bonitas e impactantes. Compor ambientes residenciais
+				costuma ser como pintar um quadro, inclusive no momento de escolher o revestimento que será utilizado:
+				todos
+				os fatores importam.</p>
+
+			<p>Caso você opte por pintar suas paredes, o que é bastante comum na maioria das casas, uma pergunta que
+				frequentemente surge é: como escolher a tinta correta? Quantos litros de tinta irei gastar?</p>
+		</div>
+		<img src="imagens/pintar.jpg" class="pintar" border="0">
+	</div>
+	<div class="textopeso">
+		<label for="peso">Selecione o peso do seu cachorro:</label>
+	</div>
+	<div class="peso">
+		<select id="peso" name="peso">
+			<option value="0-10" selected>0 a 10kg</option>
+			<option value="10-20">10 a 20 kg</option>
+			<option value="20-40">20 a 40 kg</option>
+			<option value="40+">acima de 40kg</option>
+		</select>
+	</div>
+	<button class="button" id="button" onclick="conversao()">Calcular Idade</button>
+	<div class=resp id="resposta">
+	</div>
+	<script src="main.js"></script>
+</body>
+
+</html>
