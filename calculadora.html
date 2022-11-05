@@ -15,8 +15,8 @@
             <ul>
                 <li><a href="index.html">Home</a></li>
                 <li><a href="tipotintas.html">Tipos de Tintas</a></li>
-                <li><a href="#calculatinta">Calculadora de Tinta</a></li>
-                <li><a href="#contato">Contato</a></li>
+                <li><a href="calculatinta">Calculadora de Tinta</a></li>
+                <li><a href="contato">Contato</a></li>
             </ul>
         </nav>
     </header>
@@ -24,14 +24,15 @@
         <div class="textoesq">
             <div>
                 <h1>Calculadora de Tinta</h1>
-                <p class="textotitulo">Com a calculadora de tintas você consegue estimar quanto vai precisar para a pintura de uma área,
+                <p class="textotitulo">Com a calculadora de tintas você consegue estimar quanto vai precisar para a
+                    pintura de uma área,
                     deixando mais fácil o calculo da quantidade a ser utilizada em sua obra. Para o calculo, você
                     precisa ter em mãos as medidas do ambiente, a altura e largura das áreas que não receberão pintura
                     (portas e janelas), para ser subtraído automaticamente do cálculo. Preencha todos os campos
                     indicados e clique no botão calcular.</p>
-               </div>
+            </div>
 
-               <div class="produto">
+            <div class="produto">
                 <label for="produto">1º - Selecione o produto que irá aplicar na parede:</label>
 
                 <select id="produto" name="produto">
@@ -41,8 +42,49 @@
                     <option value="massapva">Massa Corrida</option>
                 </select>
             </div>
+            <div class="demao">
+                <label for="demao">2º - Número de demão:</label>
+                
+                <select id="demao" name="demao">
+                    <option value="1" selected>1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                </select>
+                <p>O número de demãos varia de acordo com a cor do revestimento selecionado, a superfície e se é a
+                    pintura original ou um retoque.</p>
+            </div>
+            <div class="dimensaoparede">
+                <p>4º - Dimensões da parede a ser pintada:</p>
+                <label class="altura">Altura (m)</label>
+                <input type="number" name="altura" min="0" step="0.1">
+
+                <label class="largura">Largura (m)</label>
+                <input type="number" name="largura" min="0" step="0.1">
+            </div>
+            <div class="dimensaoporta">
+                <p>5º - Dimensões da Porta: (caso não tenha porta, deixa o valor em 0)</p>
+
+                <label class="alturaporta">Altura (m)</label>
+                <input type="number" name="alturaporta" min="0" step="0.1">
+
+                <label class="larguraporta">Largura (m)</label>
+                <input type="number" name="larguraporta" min="0" step="0.1">
+
+                <button class="porta-button" id="porta-button" onclick="conversao()">+ Adicionar porta</button>
+            </div>
+            <div class="dimensaojanela">
+                <p>5º - Dimensões da Janela: (caso não tenha janela, deixa o valor em 0)</p>
+
+                <label class="alturajanela">Altura (m)</label>
+                <input type="number" name="alturajanela" min="0" step="0.1">
+
+                <label class="largurajanela">Largura (m)</label>
+                <input type="number" name="largurajanela" min="0" step="0.1">
+            </div>
+
     </main>
     </main>
+    <script src="main.js"></script>
 </body>
 
 </html>

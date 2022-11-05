@@ -5,6 +5,7 @@ body {
     font-family: 'Open Sans', Arial, Helvetica;
     max-width: 1200px;
     padding: 50px;
+    margin: 0 auto;
 }
 
 header {
@@ -67,6 +68,7 @@ h1 {
 .tipoTinta{
     width: 940px;
     margin: 0 auto;
+
     
 }
 .tipoTinta li {
@@ -77,9 +79,10 @@ h1 {
         margin: 3% 3%;
         padding: 15px 15px;
         box-sizing: border-box;
-        border: 4px solid white;
         border-radius: 10px;
         background-color: #f9d6ac;
+        min-height: 400px;
+        
 }
 
 .tipoTinta li h2{
@@ -87,12 +90,12 @@ h1 {
     color: white;
 }
 .tipoTinta li:hover {
-    /*quando o o mouse esta sobre ele*/
-    border-color: #C78c19;
+    border: 4px solid #C78c19;
 }
 .tipoTinta li:hover h2{
     font-size: 34px;
 }
 .tinta{
     width: 25%;
+    border-radius: 10px;
 }
